@@ -28,7 +28,7 @@ def get_weather(city, api_key):
 
 # Main function to run the app
 def main():
-    api_key = "eddc9e06de38eee228feb1262fb1c0d1"  # Replace with your OpenWeatherMap API key
+    api_key = ""  # Replace with your OpenWeatherMap API key
     while True:
         city = input("\nEnter city name (or type 'exit' to quit): ").strip()
         if city.lower() == 'exit':
