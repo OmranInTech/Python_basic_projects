@@ -1,13 +1,30 @@
 
+def is_palindrome(text: str) -> str:
+    """
+    Checks if the given text is a palindrome.
 
+    A palindrome is a string that reads the same forwards and backwards,
+    ignoring spaces and case.
 
-def palindrome_checker(arr):
-    arr = arr.lower().replace(" ", "")  # Normalize input by removing spaces and converting to lowercase
-    palindrome = arr[::-1]  # Reverse the input
+    Args:
+        text (str): The input string to check.
 
-    if arr == palindrome:
+    Returns:
+        str: Result message indicating whether the input is a palindrome.
+    """
+    # Normalize the input: remove spaces and convert to lowercase
+    normalized_text = text.lower().replace(" ", "")
+    
+    # Reverse the normalized text
+    reversed_text = normalized_text[::-1]
+    
+    # Check if the text is a palindrome
+    if normalized_text == reversed_text:
         return "It is a palindrome"
     else:
         return "It is not a palindrome"
 
-print(palindrome_checker("abca"))  # Example usage
+
+# Example usage
+if __name__ == "__main__":
+    print(is_palindrome("abca"))
