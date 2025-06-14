@@ -1,3 +1,4 @@
+#email slicer
 def email_slicer(email):
     # Split the email address at '@'
     username, domain = email.split('@')
