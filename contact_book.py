@@ -1,4 +1,4 @@
-#contact book
+#contact book a basic project
 
 def display_menu():
     print("\n--- Contact Book Menu ---")
