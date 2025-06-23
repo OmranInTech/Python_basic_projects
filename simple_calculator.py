@@ -1,3 +1,6 @@
+#Simple_calculator
+
+
 def add(*args):
     return sum(args)
 
