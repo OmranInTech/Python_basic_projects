@@ -1,11 +1,15 @@
+
 #Dice_rolling Game
+#importing modules
 import random
 
+#creating function
 def roll_dice():
     # Generate a random number between 1 and 6 (representing a die roll)
     roll = random.randint(1, 6)
     print(f"You rolled a {roll}")
 
+#main process
 def main():
     while True:
         user_input = input("Press Enter to roll the dice, or type 'exit' to quit: ").strip().lower()
